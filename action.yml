@@ -1,8 +1,8 @@
 name: '.NET Build and Test'
 description: 'A GitHub Action to build and test .NET applications'
-author: 'Your Name'
+author: 'Yash Mahi'
 branding:
-  icon: 'check-circle' # Choose an icon from GitHub's supported icons
+  icon: 'check-circle' 
   color: 'blue'
 
 inputs:
