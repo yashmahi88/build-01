@@ -1,8 +1,8 @@
 name: '.NET Build and Test'
 description: 'A GitHub Action to build and test .NET applications'
-author: 'Yash Mahi'
+author: 'Your Name'
 branding:
-  icon: 'check-circle' 
+  icon: 'check-circle' # Choose an icon from GitHub's supported icons
   color: 'blue'
 
 inputs:
@@ -28,13 +28,17 @@ runs:
 
     - name: Restore Dependencies
       run: dotnet restore
+      shell: bash
 
     - name: Build Solution
       run: dotnet build --configuration Release
+      shell: bash
 
     - name: Run Tests
       run: dotnet test
+      shell: bash
 
     - name: Set Output
       id: build-status
       run: echo "::set-output name=build-status::success"
+      shell: bash
